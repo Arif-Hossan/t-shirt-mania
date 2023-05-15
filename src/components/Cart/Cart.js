@@ -24,8 +24,17 @@ const Cart = ({cart,handleRemoveCart}) => {
             {
                 message
             }
+            {/* turnery rendering */}
             {
                 cart.length === 3 ? <p>Tinta kinteso ?</p> :<p>Kin, aro beshi kin</p>
+            }
+            {/* and (true) conditional rendering */}
+            {
+               cart.length ===2 && <h2>Double Products</h2>
+            }
+            {/* or (render as long as false) conditional rendering */}
+            {
+               cart.length ===4 || <h2>Onek hoise</h2>
             }
         </div>
     );
@@ -37,4 +46,6 @@ export default Cart;
 conditional rendering
 1.use element and if else
 2.turnary operator true false
+3. && (if the condition is true only then render this element )
+4. || ( if the condition is false only than render this element )
 */
